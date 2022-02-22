@@ -17,7 +17,8 @@ const calc = (CP, SP, qty) => {
   else output.innerText = "Ye bik gyi hai gormint";
 };
 
-const profit_loss = () => {
+const profit_loss = (e) => {
+  e.preventDefault();
   console.log("abc");
   const CP = document.getElementById("cost_p").value;
   const SP = document.getElementById("selling_p").value;
@@ -26,4 +27,4 @@ const profit_loss = () => {
     output.innerText = "No value has been provided";
   else calc(CP, SP, qty);
 };
-btn.addEventListener("click", profit_loss);
+btn.addEventListener("submit", (e) => profit_loss(e));

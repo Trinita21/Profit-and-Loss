@@ -4,20 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Profit/Loss</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <label for="">Cost Price</label>
-      <input id="cost_p" type="number" />
-      <label for="">Selling Price</label>
-      <input id="selling_p" type="number" />
-      <label for="">Quantity</label>
-      <input id="quantity" type="number" />
-      <button id="handle-submit" type="submit">Submit</button>
-    </div>
-    <p id="output"></p>
+    <nav class="navbar">
+      <p>
+        <svg
+          class="navbar-logo"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        Profit & Loss
+      </p>
+      <ul class="nav-list">
+        <li class="nav-list-items">
+          <a href="https://github.com/Trinita21"> GitHub</a>
+        </li>
+        <li class="nav-list-items">
+          <a href="https://trinita21.github.io/">About Me</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="form-container">
+        <form class="form-inputs" id="handle-submit">
+          <label for="">Cost Price</label>
+          <input id="cost_p" type="number" required />
+          <label for="">Selling Price</label>
+          <input id="selling_p" type="number" required />
+          <label for="">Quantity</label>
+          <input id="quantity" type="number" required />
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+        <p id="output"></p>
+      </div>
+    </main>
+    <footer>
+      <a href="https://trinita21.github.io/" target="_blank">&lt;/tr&gt;</a>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
